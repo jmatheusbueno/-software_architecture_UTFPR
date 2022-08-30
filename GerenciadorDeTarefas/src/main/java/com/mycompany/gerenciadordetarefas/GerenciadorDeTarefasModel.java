@@ -5,10 +5,6 @@ public class GerenciadorDeTarefasModel {
     private String Name;
     private int Id;
     
-    public GerenciadorDeTarefasModel (){
-        
-    }
-    
     public GerenciadorDeTarefasModel Factory(int id, String name) {
         this.Id = id;
         this.Status = EGerenciadorDeTarefasStatus.CREATED;

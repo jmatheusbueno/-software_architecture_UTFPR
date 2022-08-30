@@ -6,5 +6,6 @@ public class GerenciadorDeTarefas {
 
     public static void main(String[] args) {
         MainGerenciadorDeTarefas mgf = new MainGerenciadorDeTarefas(new Scanner(System.in));
+        mgf.ShowMenuOptions();
     }
 }
