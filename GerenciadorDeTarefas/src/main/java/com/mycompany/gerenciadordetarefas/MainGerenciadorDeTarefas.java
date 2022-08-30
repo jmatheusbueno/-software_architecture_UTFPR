@@ -13,7 +13,6 @@ public class MainGerenciadorDeTarefas {
     }
     
     public void ShowMenuOptions() {
-        Scanner scanner = this.Scanner;
         int loopIndex = 0;
         boolean showMenu = true;
         
@@ -24,7 +23,7 @@ public class MainGerenciadorDeTarefas {
             switch (userOptionSelected) {
                 case 1:
                     System.out.println("\nInforme o nome da tarefa:");
-                    this.Tasks.add(new GerenciadorDeTarefasModel().Factory(loopIndex, scanner.next()));
+                    this.Tasks.add(new GerenciadorDeTarefasModel().Factory(loopIndex, Scanner.next()));
                     break;
                 case 2:
                     this.UpdateTask(this.GetTask());
